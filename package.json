@@ -10,7 +10,7 @@
         "prettier",
         "styled-components"
     ],
-    "homepage": "https://github.com/bradgarropy/secret-santa",
+    "homepage": "https://secret-santa.bradgarropy.now.sh/",
     "bugs": {
         "url": "https://github.com/bradgarropy/secret-santa/issues"
     },

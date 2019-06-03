@@ -1,4 +1,5 @@
 import React from "react"
+import Firebase from "../utils/firebase"
 
 const Index = () => (
     <div>

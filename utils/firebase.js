@@ -1,4 +1,5 @@
 import * as Firebase from "firebase/app"
+import "firebase/firestore"
 
 const config = {
     apiKey: process.env.firebase.apiKey,
@@ -14,4 +15,9 @@ const firebase = Firebase.apps.length
     ? Firebase.app()
     : Firebase.initializeApp(config)
 
-export default firebase
+const firestore = Firebase.firestore()
+
+module.exports = {
+    firebase,
+    firestore,
+}

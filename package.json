@@ -1,18 +1,20 @@
 {
-    "name": "secret-santa",
+    "name": "nextjs-firebase",
     "version": "0.0.1",
-    "description": "🎅🏻 secret santa",
+    "description": "🔥 nextjs firebase",
     "keywords": [
         "next",
         "nextjs",
         "react",
         "eslint",
         "prettier",
-        "styled-components"
+        "styled-components",
+        "firebase",
+        "firestore"
     ],
-    "homepage": "https://secret-santa.bradgarropy.now.sh/",
+    "homepage": "https://github.com/bradgarropy/nextjs-firebase",
     "bugs": {
-        "url": "https://github.com/bradgarropy/secret-santa/issues"
+        "url": "https://github.com/bradgarropy/nextjs-firebase/issues"
     },
     "license": "MIT",
     "author": {
@@ -22,7 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/bradgarropy/secret-santa"
+        "url": "https://github.com/bradgarropy/nextjs-firebase"
     },
     "scripts": {
         "dev": "next",

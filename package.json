@@ -27,11 +27,10 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
-        "start": "next start",
-        "now-build": "next build"
+        "now-build": "next build",
+        "start": "next start"
     },
     "dependencies": {
-        "@zeit/webpack-asset-relocator-loader": "^0.5.1",
         "dotenv": "^8.0.0",
         "firebase": "^6.1.0",
         "next": "^8.1.0",

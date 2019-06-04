@@ -1,26 +1,8 @@
 import React from "react"
-import {useState, useEffect} from "react"
+import PropTypes from "prop-types"
 import {firestore} from "../utils/firebase"
 
-const Index = () => {
-    const [users, setUsers] = useState([])
-
-    const getUsers = async() => {
-        const query = await firestore.collection("users").get()
-        const users = query.docs.map(user => {
-            return {
-                id: user.id,
-                ...user.data(),
-            }
-        })
-
-        setUsers(users)
-    }
-
-    useEffect(() => {
-        getUsers()
-    }, [])
-
+const Index = ({users}) => {
     return (
         <div>
             <p>Hello Next.js</p>
@@ -31,6 +13,22 @@ const Index = () => {
             ))}
         </div>
     )
+}
+
+Index.getInitialProps = async() => {
+    const query = await firestore.collection("users").get()
+    const users = query.docs.map(user => {
+        return {
+            id: user.id,
+            ...user.data(),
+        }
+    })
+
+    return {users}
+}
+
+Index.propTypes = {
+    users: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default Index

@@ -2,13 +2,23 @@ import firebase from "firebase/app"
 import "firebase/auth"
 import "firebase/firestore"
 
+// const config = {
+//     apiKey: process.env.firebase.apiKey,
+//     authDomain: `${process.env.firebase.projectId}.firebaseapp.com`,
+//     databaseURL: `https://${process.env.firebase.projectId}.firebaseio.com`,
+//     projectId: process.env.firebase.projectId,
+//     storageBucket: `${process.env.firebase.projectId}.appspot.com`,
+//     messagingSenderId: process.env.firebase.senderId,
+//     appId: process.env.firebase.appId,
+// }
+
 const config = {
     apiKey: process.env.firebase.apiKey,
-    authDomain: `${process.env.firebase.projectId}.firebaseapp.com`,
-    databaseURL: `https://${process.env.firebase.projectId}.firebaseio.com`,
+    authDomain: process.env.firebase.authDomain,
+    databaseURL: process.env.firebase.databaseURL,
     projectId: process.env.firebase.projectId,
-    storageBucket: `${process.env.firebase.projectId}.appspot.com`,
-    messagingSenderId: process.env.firebase.senderId,
+    storageBucket: process.env.firebase.storageBucket,
+    messagingSenderId: process.env.firebase.messagingSenderId,
     appId: process.env.firebase.appId,
 }
 

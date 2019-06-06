@@ -1,4 +1,6 @@
-require("dotenv").config()
+require("dotenv").config({
+    path: ".env.build",
+})
 
 const withAssetRelocator = (nextConfig = {}) => {
     return Object.assign({}, nextConfig, {
@@ -29,6 +31,7 @@ const withAssetRelocator = (nextConfig = {}) => {
             if (typeof nextConfig.webpack === "function") {
                 return nextConfig.webpack(config, options)
             }
+
             return config
         },
     })
@@ -36,6 +39,14 @@ const withAssetRelocator = (nextConfig = {}) => {
 
 const config = {
     target: "serverless",
+    env: {
+        firebase: {
+            apiKey: process.env.FIREBASE_API_KEY,
+            projectId: process.env.FIREBASE_PROJECT_ID,
+            senderId: process.env.FIREBASE_SENDER_ID,
+            appId: process.env.FIREBASE_APP_ID,
+        },
+    },
 }
 
 module.exports = withAssetRelocator(config)

@@ -35,7 +35,7 @@
     "dependencies": {
         "@zeit/webpack-asset-relocator-loader": "^0.5.1",
         "dotenv": "^8.0.0",
-        "firebase": "^6.0.4",
+        "firebase": "^6.0.2",
         "next": "^8.1.1-canary.47",
         "prop-types": "^15.7.2",
         "react": "^16.8.6",

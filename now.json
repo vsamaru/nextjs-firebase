@@ -4,7 +4,7 @@
     "builds": [
         {
             "src": "next.config.js",
-            "use": "@now/next@canary",
+            "use": "@now/next",
             "config": {"maxLambdaSize": "15mb"}
         }
     ],

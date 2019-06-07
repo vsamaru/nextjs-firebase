@@ -22,7 +22,7 @@ const withAssetRelocator = (nextConfig = {}) => {
                             outputAssetBase: "assets",
                             existingAssetNames: [],
                             wrapperCompatibility: true,
-                            escapeNonAnalyzableRequires: true,
+                            production: true,
                         },
                     },
                 })

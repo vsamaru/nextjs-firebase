@@ -1,24 +1,14 @@
 import firebase from "firebase/app"
-import "firebase/auth"
 import "firebase/firestore"
-
-// const config = {
-//     apiKey: process.env.firebase.apiKey,
-//     authDomain: `${process.env.firebase.projectId}.firebaseapp.com`,
-//     databaseURL: `https://${process.env.firebase.projectId}.firebaseio.com`,
-//     projectId: process.env.firebase.projectId,
-//     storageBucket: `${process.env.firebase.projectId}.appspot.com`,
-//     messagingSenderId: process.env.firebase.senderId,
-//     appId: process.env.firebase.appId,
-// }
+import "firebase/auth"
 
 const config = {
     apiKey: process.env.firebase.apiKey,
-    authDomain: process.env.firebase.authDomain,
-    databaseURL: process.env.firebase.databaseURL,
+    authDomain: `${process.env.firebase.projectId}.firebaseapp.com`,
+    databaseURL: `https://${process.env.firebase.projectId}.firebaseio.com`,
     projectId: process.env.firebase.projectId,
-    storageBucket: process.env.firebase.storageBucket,
-    messagingSenderId: process.env.firebase.messagingSenderId,
+    storageBucket: `${process.env.firebase.projectId}.appspot.com`,
+    messagingSenderId: process.env.firebase.senderId,
     appId: process.env.firebase.appId,
 }
 
@@ -26,7 +16,7 @@ const app = firebase.apps.length
     ? firebase.app()
     : firebase.initializeApp(config)
 
-const auth = firebase.auth()
 const firestore = firebase.firestore()
+const auth = firebase.auth()
 
 export {firebase, app, auth, firestore}

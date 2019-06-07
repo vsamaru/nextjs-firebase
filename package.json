@@ -1,51 +1,52 @@
 {
-    "name": "nextjs-firebase",
-    "version": "0.0.1",
-    "description": "🔥 nextjs firebase",
-    "keywords": [
-        "next",
-        "nextjs",
-        "react",
-        "eslint",
-        "prettier",
-        "styled-components",
-        "firebase",
-        "firestore"
-    ],
-    "homepage": "https://github.com/bradgarropy/nextjs-firebase",
-    "bugs": {
-        "url": "https://github.com/bradgarropy/nextjs-firebase/issues"
-    },
-    "license": "MIT",
-    "author": {
-        "name": "Brad Garropy",
-        "email": "bradgarropy@gmail.com",
-        "url": "https://bradgarropy.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/bradgarropy/nextjs-firebase"
-    },
-    "scripts": {
-        "dev": "next",
-        "build": "next build",
-        "now-build": "next build",
-        "start": "next start"
-    },
-    "dependencies": {
-        "dotenv": "^8.0.0",
-        "firebase": "^6.1.0",
-        "next": "^8.1.0",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6"
-    },
-    "devDependencies": {
-        "babel-eslint": "^10.0.1",
-        "eslint": "^5.15.3",
-        "eslint-config-bradgarropy": "^1.1.0",
-        "eslint-plugin-jsx-a11y": "^6.2.1",
-        "eslint-plugin-react": "^7.12.4",
-        "eslint-plugin-react-hooks": "^1.5.1"
-    },
-    "peerDependencies": {}
+  "name": "nextjs-firebase",
+  "version": "0.0.1",
+  "description": "🔥 nextjs firebase",
+  "keywords": [
+    "next",
+    "nextjs",
+    "react",
+    "eslint",
+    "prettier",
+    "styled-components",
+    "firebase",
+    "firestore"
+  ],
+  "homepage": "https://github.com/bradgarropy/nextjs-firebase",
+  "bugs": {
+    "url": "https://github.com/bradgarropy/nextjs-firebase/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Brad Garropy",
+    "email": "bradgarropy@gmail.com",
+    "url": "https://bradgarropy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradgarropy/nextjs-firebase"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "now-build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/webpack-asset-relocator-loader": "^0.5.1",
+    "dotenv": "^8.0.0",
+    "firebase": "^6.1.0",
+    "next": "^8.1.1-canary.44",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.3",
+    "eslint-config-bradgarropy": "^1.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.1"
+  },
+  "peerDependencies": {}
 }

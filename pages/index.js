@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import {useState, useEffect} from "react"
 import {firestore} from "../utils/firebase"
 
 const Index = ({users}) => {

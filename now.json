@@ -12,11 +12,11 @@
     ],
     "build": {
         "env": {
-            "TRACKING_ID": "",
-            "FIREBASE_API_KEY": "AIzaSyDs48Asnq0WXjS0MvLRs4V0DCrfmcEpi7s",
-            "FIREBASE_PROJECT_ID": "next-firebase-boilerplate",
-            "FIREBASE_SENDER_ID": "928916417074",
-            "FIREBASE_APP_ID": ""
+            "TRACKING_ID": "@tracking_id",
+            "FIREBASE_API_KEY": "@firebase_api_key",
+            "FIREBASE_PROJECT_ID": "@firebase_project_id",
+            "FIREBASE_SENDER_ID": "@firebase_sender_id",
+            "FIREBASE_APP_ID": "@firebase_app_id"
         }
     }
 }

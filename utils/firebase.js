@@ -17,8 +17,4 @@ const app = firebase.apps.length
 
 const firestore = firebase.firestore()
 
-module.exports = {
-    firebase,
-    app,
-    firestore,
-}
+export {firebase, app, firestore}

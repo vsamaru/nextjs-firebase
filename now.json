@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "public": true,
     "builds": [
         {
             "src": "next.config.js",
@@ -11,12 +12,10 @@
     ],
     "build": {
         "env": {
+            "TRACKING_ID": "",
             "FIREBASE_API_KEY": "AIzaSyDs48Asnq0WXjS0MvLRs4V0DCrfmcEpi7s",
-            "FIREBASE_AUTH_DOMAIN": "next-firebase-boilerplate.firebaseapp.com",
-            "FIREBASE_DATABASE_URL": "https://next-firebase-boilerplate.firebaseio.com",
             "FIREBASE_PROJECT_ID": "next-firebase-boilerplate",
-            "FIREBASE_STORAGE_BUCKET": "",
-            "FIREBASE_MESSAGING_SENDER_ID": "928916417074",
+            "FIREBASE_SENDER_ID": "928916417074",
             "FIREBASE_APP_ID": ""
         }
     }

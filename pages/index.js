@@ -2,6 +2,7 @@ import React from "react"
 import {useState, useEffect} from "react"
 import {firestore} from "../utils/firebase"
 
+
 const Index = () => {
     const [users, setUsers] = useState([])
 
